@@ -58,4 +58,5 @@ plt.title("KDE Plot of Actual Values vs Predicted Values")
 plt.legend()
 plt.show()
 
+# Interpretation : the two curves show significant overlap, indicating that the model has captured the general distribution of the the target values reasonably well. However, the predicted values deviate slightly from the actual valuesin some regions.
 
