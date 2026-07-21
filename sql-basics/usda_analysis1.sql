@@ -34,8 +34,8 @@ WHERE yoghurt.year = 2022
 GROUP BY yoghurt.year;
 
 SELECT SUM(y.value) AS TotalYoghurtProduction
-FROM yoghurt_production y
-WHERE y.year =2022 AND y.State_ANSI IN (
-SELECT DISTINCT c.State_ANSI 
-FROM cheese_production c 
-WHERE C.year = 2022);
+FROM yoghurt_production yoghurt
+WHERE yoghurt.year =2022 AND yoghurt.State_ANSI IN (
+SELECT DISTINCT cheese.State_ANSI 
+FROM cheese_production cheese 
+WHERE Cheese.year = 2022);
